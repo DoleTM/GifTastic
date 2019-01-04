@@ -1,4 +1,32 @@
 /* Styles for Giphy Homework */
+h1 {
+    color: white;
+}
+
+header {
+    color:white;
+}
+
 button, div, form, input {
     margin: 10px;
+}
+
+body {
+    background-image: url(../images/zwartevilt.png);
+    width: auto;
+    height: auto;
+}
+
+#topic-search, #topic-buttons, #gif-div {
+    color: white;
+    font-family: 'Francois One', sans-serif;
+}
+
+#topic-form {
+    float: right;
+}
+
+#gif-div {
+    position: absolute;
+    width: 100%;
 }

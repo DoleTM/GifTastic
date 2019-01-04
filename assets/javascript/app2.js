@@ -1,4 +1,4 @@
-var topics = ["The Office", "Zhu", "Dogs", "Always Sunny", "Arctic Monkeys", "Anahiem Ducks", "Honey Badger"]
+var topics = ["The Office", "Zhu", "Dogs", "Always Sunny", "Arctic Monkeys", "Anahiem Ducks", "Honey Badger", "Joe Rogan", "Tacos", "Sleep"]
 
 function displayGiphy() {
     var topic = $(this).attr("data-topic");
@@ -18,11 +18,11 @@ function displayGiphy() {
 
             var p = $("<p>").text("Rating: " + rating);
             var topicImage = $("<img>");
-            topicImage.attr("src", results[i].images.fixed_height_still.url);
-            topicImage.attr("data-still", results[i].images.fixed_height_still.url).attr("data-animate", results[i].images.fixed_height.url).attr("data-state", "still").addClass("gif");
+            topicImage.attr("src", results[i].images.fixed_width_still.url);
+            topicImage.attr("data-still", results[i].images.fixed_width_still.url).attr("data-animate", results[i].images.fixed_width.url).attr("data-state", "still").addClass("gif");
 
             giphyDiv.prepend(p).prepend(topicImage);
-
+             
             $("#gif-div").prepend(giphyDiv);
         };
     });
