@@ -22,7 +22,7 @@ function displayGiphy() {
             topicImage.attr("data-still", results[i].images.fixed_width_still.url).attr("data-animate", results[i].images.fixed_width.url).attr("data-state", "still").addClass("gif");
 
             giphyDiv.prepend(p).prepend(topicImage);
-             
+
             $("#gif-div").prepend(giphyDiv);
         };
     });
@@ -39,16 +39,16 @@ function renderButtons() {
 }
 
 $("#add-topic").on("click", function (event) {
-    event.preventDefault();
-    var topic = $("#topic-input").val().trim();
-    topics.push(topic);
-    renderButtons();
+        event.preventDefault();
+        var topic = $("#topic-input").val().trim();
+        topics.push(topic);
+        renderButtons();
 });
 
 $(document).on("click", ".newTopic", displayGiphy);
 renderButtons();
 
-$("#gif-div").on("click", "img", function() {
+$("#gif-div").on("click", "img", function () {
     var state = $(this).attr("data-state");
     console.log(state);
 

@@ -22,6 +22,12 @@ body {
     font-family: 'Francois One', sans-serif;
 }
 
+#limitless {
+    background-image: url(../images/limitless.gif);
+    max-width: 200px;
+    max-height: 112px;
+}
+
 #topic-form {
     float: right;
 }
